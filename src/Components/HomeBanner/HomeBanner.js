@@ -6,7 +6,7 @@ export default function Banner() {
   return (
     <section className="homeBanner">
         <img src={HomeBannerImg} alt="bannière" className="homeBanner__img" />
-        <div className="filterBanner"></div>
+        <div className="homeBanner__layer"></div>
         <h2 className="homeBanner__txt">
         Chez vous, partout et ailleurs
         </h2>

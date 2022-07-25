@@ -16,7 +16,7 @@
     z-index: -1;
 }
 
-.filterBanner {
+.homeBanner__layer {
     background: #000000;
     mix-blend-mode: darken;
     opacity: 0.3;
