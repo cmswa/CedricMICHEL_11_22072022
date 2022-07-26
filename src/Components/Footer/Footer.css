@@ -1,0 +1,20 @@
+footer {
+    height: 210px;
+    background: black;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.footerCopyright {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    /* text-align: center; */
+    color: white;
+}
+
+.footerLogo {
+    padding: 4em 0 3em 0;
+}
