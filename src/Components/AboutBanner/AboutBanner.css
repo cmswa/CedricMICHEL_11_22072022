@@ -1,0 +1,25 @@
+.aboutBanner {
+    height: 223px;
+    margin: 4% 8%;
+    border-radius: 25px;
+    position: relative;
+}
+
+.aboutBanner__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.aboutBanner__layer {
+    background: #000000;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+    border-radius: 25px;
+    height: 100%;
+}

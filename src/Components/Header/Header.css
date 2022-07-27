@@ -8,17 +8,18 @@
 
 .nav {
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.nav__ul {
+.nav a {
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 500;
     line-height: 34px;
     letter-spacing: 0em;
     color: #ff6060;
-    display: flex;
-    justify-content: flex-end;
+    text-decoration: none;
 }
 
 .nav-home {

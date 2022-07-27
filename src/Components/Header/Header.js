@@ -2,17 +2,16 @@ import React from 'react'
 import Logo from '../../assets/icons/LOGO.png'
 import './Header.css'
 import { v4 as uuidv4 } from 'uuid';
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <header className='header'>
-        <img src={Logo} alt="Kasa" />
-        <div className='nav' >
-          <ul className='nav__ul'>
-            <li className="nav-home">Accueil</li>
-            <li className="nav-about">A Propos</li>
-          </ul>
-        </div>
+      <Link to="/"><img src={Logo} alt="Kasa" /></Link>
+      <nav className='nav'>
+        <Link className="nav-home" to='/'>Accueil</Link>
+        <Link className="nav-about" to='/about'>A Propos</Link>
+      </nav>
 
     </header>
   )
