@@ -19,10 +19,17 @@
     line-height: 34px;
     letter-spacing: 0em;
     color: #ff6060;
-    text-decoration: none;
 }
 
-.nav-home {
+nav a:first-child {
     /* margin-right: 15%; */
     margin-right: 7%;
+}
+
+.activeLink {
+    text-decoration-line: underline
+}
+
+.notAvtiveLink {
+    text-decoration: none;
 }
