@@ -1,0 +1,45 @@
+.accord {
+    width: 70%;
+    /* height: 184px; */
+    height: auto;
+    border-radius: 5px;
+    margin: 100px auto 0; /*centrer*/
+}
+
+.accord-visible {
+    background: #ff6060;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    height: 47px;
+}
+
+.accordTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    color: white;
+}
+
+.accord-toogle {
+    background: #f7f7f7;
+    border-radius: 5px;
+}
+
+.accord-toogle p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 142.6%;
+    color: #ff6060;
+    margin: 0;
+    padding: 22px 15px 10px;
+    pointer-events: none;
+    text-align:left;
+}
