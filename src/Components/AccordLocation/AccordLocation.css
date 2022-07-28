@@ -1,0 +1,74 @@
+.accord {
+    width: 46%;
+    /* height: 184px; */
+    height: auto;
+    border-radius: 10px;
+    /*centrer*/
+    /* margin: 40px auto 0;  */
+    margin: 0;
+}
+
+.accord-visible {
+    background: #ff6060;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    height: 47px;
+    position: relative;
+    z-index: 1;
+}
+
+.accordTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    color: white;
+}
+
+.accord-toggle {
+    background: #f7f7f7;
+    border-radius: 5px;
+    opacity: 0;
+    /* fermer l'accordéon */
+    transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
+    margin-top: -10px;
+    z-index: -1;
+}
+
+.accord-toggle p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 142.6%;
+    color: #ff6060;
+    margin: 0;
+    padding: 32px 15px 20px;
+    pointer-events: none;
+    text-align: left;
+}
+
+.animated {
+    opacity: 1;
+    transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
+}
+
+.chevron {
+    width: 20px;
+    /* transform: initial; */
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 8%;
+}

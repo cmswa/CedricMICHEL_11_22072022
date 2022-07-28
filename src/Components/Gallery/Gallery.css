@@ -26,3 +26,12 @@
     transform: translateY(-50%);
     right: 25px;
 }
+
+.gallery__index {
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 25px;
+}

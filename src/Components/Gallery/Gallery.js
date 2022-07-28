@@ -8,8 +8,9 @@ export default function Gallery() {
   return (
     <section className="gallery">
         <img className='gallery__img' src="https://picsum.photos/1240/415" alt="" />
-        <img src={ChevronLeft} alt="chevron left" className="chevronLeft" />
-        <img src={ChevronRight} alt="chevron right" className="chevronRight" />
+        <img src={ChevronLeft} alt="previous" className="chevronLeft" />
+        <img src={ChevronRight} alt="next" className="chevronRight" />
+        <p className="gallery__index">1/6 </p>
     </section>
   )
 }

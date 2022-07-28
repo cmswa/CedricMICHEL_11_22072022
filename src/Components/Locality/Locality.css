@@ -1,0 +1,78 @@
+.locality {
+    color: #ff6060;
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 8%;
+}
+
+.locality__specifics {
+    display: flex;
+    flex-direction: column;
+}
+
+.locality__specifics-title {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+}
+
+.locality__specifics-place,
+.locality__specifics-name {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+}
+.locality__specifics-place {
+    margin-bottom: 1.3em;
+}
+
+.locality__specifics-tags {
+    text-align: center;
+    display: flex;
+}
+
+.locality__host {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.locality__host__profil {
+    display: flex;
+    justify-content: flex-end;
+}
+
+p.locality__host__profil-name {
+    margin-right: 10px;
+}
+
+img.locality__host__profil-img {
+    border-radius: 50px;
+}
+
+ul.locality__host__stars {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.star {
+    margin-left: 10px;
+}
+
+.tag {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    background-color: #ff6060;
+    padding: 3px 35px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
