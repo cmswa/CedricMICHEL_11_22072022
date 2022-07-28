@@ -19,19 +19,19 @@ export default function AccordLocation({ title, description }) {
 
 
   return (
-    <div className='accord'>
+    <div className='accordLocation'>
 
       <div
         onClick={toggleState}
-        className="accord-visible">
-        <h2 className='accordTitle'>{title}</h2>
+        className="accordLocation-visible">
+        <h2 className='accordLocationTitle'>{title}</h2>
         <img className={toggle ? 'chevron rotate' : 'chevron'} src={ChevronDown} alt="chevron down" />
       </div>
 
       <div
         ref={refHeight}
-        className={toggle ? 'accord-toggle animated' : 'accord-toggle'}
-        style={{ height: toggle ? `${heightEl}` : '0px' }} /* hauteur qui grandit et rétrécit */
+        className={toggle ? 'accordLocation-toggle animated' : 'accordLocation-toggle'}
+        style={{ height: toggle ? '250px' : '0px' }} /* hauteur qui grandit et rétrécit */
       >
         <p
           aria-hidden={toggle ? 'true' : 'false'} /* retirer texte présent à la fermeture */
