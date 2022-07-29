@@ -1,6 +1,7 @@
 import React from 'react'
 import './Locality.css'
 import { v4 as uuidv4 } from 'uuid';
+import Stars from '../Stars/Stars';
 
 export default function Locality({ logement }) {
   return (
@@ -26,11 +27,12 @@ export default function Locality({ logement }) {
           <img src={logement.host.picture} alt={logement.host.name} className="locality__host__profil-img" />
         </div>
         <ul className="locality__host__stars">
+          < Stars rating={logement.rating} />
+          {/* <li className="star"><img src="https://picsum.photos/30/30" alt="" className="star-img" /></li>
           <li className="star"><img src="https://picsum.photos/30/30" alt="" className="star-img" /></li>
           <li className="star"><img src="https://picsum.photos/30/30" alt="" className="star-img" /></li>
           <li className="star"><img src="https://picsum.photos/30/30" alt="" className="star-img" /></li>
-          <li className="star"><img src="https://picsum.photos/30/30" alt="" className="star-img" /></li>
-          <li className="star"><img src="https://picsum.photos/30/30" alt="" className="star-img" /></li>
+          <li className="star"><img src="https://picsum.photos/30/30" alt="" className="star-img" /></li> */}
         </ul>
       </div>
     </section>

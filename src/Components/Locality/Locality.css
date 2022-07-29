@@ -46,25 +46,27 @@
     justify-content: flex-end;
 }
 
-p.locality__host__profil-name {
+.locality__host__profil-name {
     margin-right: 10px;
+    width: 4.5em;
+    text-align: right;
 }
 
-img.locality__host__profil-img {
+.locality__host__profil-img {
     border-radius: 75px;
     size: 64px;
     height: 64px;
     object-fit: cover;
 }
 
-ul.locality__host__stars {
+.locality__host__stars {
     display: flex;
     justify-content: flex-end;
 }
 
-.star {
+/* .star {
     margin-left: 10px;
-}
+} */
 
 .tag {
     font-family: Montserrat;
