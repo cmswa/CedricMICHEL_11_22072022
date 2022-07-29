@@ -20,7 +20,7 @@ export default function Gallery({ pictures, title }) {
       <img className='gallery__img' src={pictures[currentPicture]} alt={title} />
       <img src={ChevronLeft} alt="previous" className="chevronLeft" onClick={previousPicture} />
       <img src={ChevronRight} alt="next" className="chevronRight" onClick={nextPicture} />
-      <p className="gallery__index">1/6 </p>
+      <p className="gallery__index">{currentPicture + 1}/{picturesLength} </p>
     </section>
   )
 }
