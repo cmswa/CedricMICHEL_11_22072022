@@ -18,8 +18,9 @@ export default function Gallery({ pictures, title }) {
     <section className="gallery">
       {/* checker alt après un changement de photos */}
       <img className='gallery__img' src={pictures[currentPicture]} alt={title} />
-      <img src={ChevronLeft} alt="previous" className="chevronLeft" onClick={previousPicture} />
-      <img src={ChevronRight} alt="next" className="chevronRight" onClick={nextPicture} />
+      {picturesLength !== 1 &&
+        <><img src={ChevronLeft} alt="previous" className="chevronLeft" onClick={previousPicture} />
+          <img src={ChevronRight} alt="next" className="chevronRight" onClick={nextPicture} /></>}
       <p className="gallery__index">{currentPicture + 1}/{picturesLength} </p>
     </section>
   )
