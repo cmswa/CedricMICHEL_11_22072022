@@ -1,6 +1,5 @@
 import React from 'react'
 import './Gallery.css'
-import Data from '../../data/logements.json'
 import ChevronLeft from '../../assets/icons/chevron-left-img.png'
 import ChevronRight from '../../assets/icons/chevron-right-img.png'
 import { useState } from 'react'
@@ -16,7 +15,6 @@ export default function Gallery({ pictures, title }) {
 
   return (
     <section className="gallery">
-      {/* checker alt après un changement de photos */}
       <img className='gallery__img' src={pictures[currentPicture]} alt={title} />
       {picturesLength !== 1 &&
         <><img src={ChevronLeft} alt="previous" className="chevronLeft" onClick={previousPicture} />

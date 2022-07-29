@@ -51,7 +51,10 @@ p.locality__host__profil-name {
 }
 
 img.locality__host__profil-img {
-    border-radius: 50px;
+    border-radius: 75px;
+    size: 64px;
+    height: 64px;
+    object-fit: cover;
 }
 
 ul.locality__host__stars {

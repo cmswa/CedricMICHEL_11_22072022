@@ -32,7 +32,7 @@ export default function Location() {
     <div>
       < Header />
       < Gallery pictures={logement.pictures} title={logement.title} />
-      < Locality />
+      < Locality logement={logement} />
       <section className="description">
         < AccordLocation />
         < AccordLocation />
