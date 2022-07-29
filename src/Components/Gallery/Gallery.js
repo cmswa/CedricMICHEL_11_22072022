@@ -3,14 +3,19 @@ import './Gallery.css'
 import Data from '../../data/logements.json'
 import ChevronLeft from '../../assets/icons/chevron-left-img.png'
 import ChevronRight from '../../assets/icons/chevron-right-img.png'
+import { useState } from 'react'
 
-export default function Gallery() {
+export default function Gallery({ pictures, title }) {
+
+  const [currentPicture, setCurrentPicture] = useState(0)
+
   return (
     <section className="gallery">
-        <img className='gallery__img' src="https://picsum.photos/1240/415" alt="" />
-        <img src={ChevronLeft} alt="previous" className="chevronLeft" />
-        <img src={ChevronRight} alt="next" className="chevronRight" />
-        <p className="gallery__index">1/6 </p>
+      {/* checker alt après un changement de photos */}
+      <img className='gallery__img' src={pictures[currentPicture]} alt={title} />
+      <img src={ChevronLeft} alt="previous" className="chevronLeft" />
+      <img src={ChevronRight} alt="next" className="chevronRight" />
+      <p className="gallery__index">1/6 </p>
     </section>
   )
 }

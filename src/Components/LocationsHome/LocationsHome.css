@@ -7,9 +7,14 @@
 }
 
 .locationsHome__contains {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
+    /***** ou *****/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 0 2%;
 }
 
 .location {
