@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import './AccordLocation.css'
 import ChevronDown from '../../assets/icons/chevron-down.png'
 
-export default function AccordLocation({ title, description }) {
+export default function AccordLocation({ title, description, equipments }) {
 
   const [toggle, setToggle] = useState(false)
   const [heightEl, setHeightEl] = useState()
@@ -31,12 +31,18 @@ export default function AccordLocation({ title, description }) {
       <div
         ref={refHeight}
         className={toggle ? 'accordLocation-toggle animated' : 'accordLocation-toggle'}
-        style={{ height: toggle ? '250px' : '0px' }} /* hauteur qui grandit et rétrécit */
+        style={{ minHeight: toggle ? '250px' : '0px' }} /* hauteur qui grandit et rétrécit */
       >
-        <p
+
+        <p className='accordLocation-toggle__description'
           aria-hidden={toggle ? 'true' : 'false'} /* retirer texte présent à la fermeture */
         >
           {description}</p>
+
+        <ul className="accordLocation-toggle__equipments"
+          aria-hidden={toggle ? 'true' : 'false'}
+        >{equipments}</ul>
+
       </div>
 
     </div>

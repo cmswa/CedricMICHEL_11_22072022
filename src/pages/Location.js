@@ -34,8 +34,9 @@ export default function Location() {
       < Gallery pictures={logement.pictures} title={logement.title} />
       < Locality logement={logement} />
       <section className="description">
-        < AccordLocation />
-        < AccordLocation />
+        < AccordLocation title="Description" description={logement.description} />  
+        < AccordLocation title="Équipements" equipments={logement.equipments.map((equipment) => 
+        <li className="accordLocation-toggle__equipments__equipment" key={equipment}>{equipment}</li>)} />
       </section>
       < Footer />
     </div>

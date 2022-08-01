@@ -11,7 +11,7 @@
 }
 
 .locality__specifics-title {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 36px;
     font-weight: 500;
     line-height: 51px;
@@ -20,7 +20,7 @@
 
 .locality__specifics-place,
 .locality__specifics-name {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
@@ -69,7 +69,7 @@
 } */
 
 .tag {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;

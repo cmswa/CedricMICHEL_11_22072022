@@ -10,11 +10,11 @@ export default function Stars({ rating }) {
     return (
         <>
             {ratingArray.map((rank) => (
-                rank <= rating ? <li className="star">
-                    <img key={rank} className="star-img" src={orangeStar} alt="" />
+                rank <= rating ? <li key={rank} className="star">
+                    <img className="star-img" src={orangeStar} alt="" />
                 </li>
-                    : <li className="star">
-                        <img key={rank} className="star-img" src={greyStar} alt="" />
+                    : <li key={rank} className="star">
+                        <img className="star-img" src={greyStar} alt="" />
                     </li>
             ))}
         </>

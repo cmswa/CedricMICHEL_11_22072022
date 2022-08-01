@@ -6,7 +6,7 @@
 }
 
 .notFound__title {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 288px;
     font-weight: 700;
     /* line-height: 411px; */
@@ -14,7 +14,7 @@
 }
 
 .notFound__txt {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 36px;
     font-weight: 500;
     line-height: 51px;
@@ -24,7 +24,7 @@
 
 .notFound__link {
     color: #ff6060;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
