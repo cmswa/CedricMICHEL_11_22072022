@@ -19,7 +19,8 @@
 
 .location {
     /* background: rebeccapurple; */
-    width: 340px;
+    /* width: 340px; */
+    width: 88%;
     height: 340px;
     margin-top: 3em;
     border-radius: 10px;
@@ -64,4 +65,27 @@
     text-align: left;
     color: #ffffff;
     padding-right: 5%;
+}
+
+/********************************************************** 
+        Responsive avec Media Queries  -   <992px    tablet
+***********************************************************/
+@media all and (max-width: 993px) {
+    .locationsHome {
+        margin: 4% 2%;
+    }
+
+    .locationsHome__contains {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/********************************************************** 
+        Responsive avec Media Queries  -   <576px    mobile
+***********************************************************/
+@media all and (max-width: 577px) {
+
+
+
 }

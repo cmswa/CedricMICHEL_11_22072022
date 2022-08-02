@@ -23,3 +23,23 @@
     border-radius: 25px;
     height: 100%;
 }
+
+/********************************************************** 
+        Responsive avec Media Queries  -   <992px    tablet
+***********************************************************/
+@media all and (max-width: 993px) {
+    .aboutBanner {
+        margin: 4% 2%;
+    }
+
+
+}
+
+/********************************************************** 
+        Responsive avec Media Queries  -   <576px    mobile
+***********************************************************/
+@media all and (max-width: 577px) {
+
+
+
+}

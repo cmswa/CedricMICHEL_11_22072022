@@ -37,4 +37,25 @@
     transform: translate(-50%, -50%);
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+/********************************************************** 
+        Responsive avec Media Queries  -   <992px    tablet
+***********************************************************/
+@media all and (max-width: 993px) {
+    .homeBanner {
+        margin: 4% 2%;
+    }
+
+}
+
+/********************************************************** 
+        Responsive avec Media Queries  -   <576px    mobile
+***********************************************************/
+@media all and (max-width: 577px) {
+
+
+
 }
