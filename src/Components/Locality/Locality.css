@@ -82,3 +82,44 @@
     border-radius: 10px;
     margin-right: 10px;
 }
+
+/********************************************************** 
+        Responsive avec Media Queries  -   <576px    mobile
+***********************************************************/
+@media all and (max-width: 577px) {
+    .locality {
+        margin: 4% 5%;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .locality__specifics-title {
+        font-size: 18px;
+    }
+    .locality__specifics-place {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    .locality__specifics-tags {
+        flex-wrap: wrap;
+    }
+    .tag {
+        height: 18px;
+        font-size: 10px;
+        line-height: 14px;
+        padding: 3px 29px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    .locality__host {
+        flex-direction: row-reverse;
+        margin-top: 1em;
+    }
+    .locality__host__profil-img {
+        size: 32px;
+        height: 32px;
+    }
+    .locality__host__profil-name {
+        font-size: 12px;
+        line-height: 142.6%;
+    }
+}

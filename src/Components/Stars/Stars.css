@@ -1,3 +1,16 @@
 .star {
     margin-left: 10px;
 }
+
+/********************************************************** 
+        Responsive avec Media Queries  -   <576px    mobile
+***********************************************************/
+@media all and (max-width: 577px) {
+    .star {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+    .star-img {
+        width: 15px;
+    }
+}

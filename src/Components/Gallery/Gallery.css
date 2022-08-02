@@ -35,3 +35,29 @@
     transform: translate(-50%);
     bottom: 25px;
 }
+
+/********************************************************** 
+        Responsive avec Media Queries  -   <576px    mobile
+***********************************************************/
+@media all and (max-width: 577px) {
+    .gallery {
+        margin: 4% 5%;
+        height: 255px;
+        border-radius: 10px;
+        margin-bottom: 0;
+    }
+    .gallery__img {
+        border-radius: 10px;
+    }
+    .chevronLeft {
+        width: 12px;
+        left: 6px;
+    }
+    .chevronRight {
+        width: 12px;
+        right: 6px;
+    }
+    .gallery__index {
+        bottom: 7px;
+    }
+}

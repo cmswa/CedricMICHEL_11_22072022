@@ -83,3 +83,49 @@
     /* margin: 4% 8% 0; */
     margin: 2.5% 8% 0;
 }
+
+/********************************************************** 
+        Responsive avec Media Queries  -   <576px    mobile
+***********************************************************/
+@media all and (max-width: 577px) {
+    .description {
+        margin: 4% 5%;
+        display: block;
+    }
+    .accordLocation {
+        width: auto;
+    }
+    .accordLocation-visible {
+        height: 30px;
+    }
+    .accordLocation-toggle {
+        padding-bottom: 0;
+    }
+    .accordLocationTitle {
+        font-size: 13px;
+        line-height: 142.6%;
+    }
+    .accordLocation-toggle__description {
+        padding-bottom: 15px;
+    }
+    .chevron {
+        width: 15px;
+    }
+    .accordLocation-toggle__description,
+    .accordLocation-toggle__equipments {
+        /* font-size: 12px;
+        line-height: 142.6%; */
+        font-size: 12px;
+        line-height: 116%;
+    }
+    .animated {
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+    .accordLocation-toggle__equipments__equipment {
+        margin-bottom: 0;
+    }
+    ul.accordLocation-toggle__equipments {
+        /* margin-top: -20px; */
+    }
+}
