@@ -27,7 +27,7 @@ nav a:first-child {
 }
 
 .activeLink {
-    text-decoration-line: underline
+    text-decoration-line: underline;
 }
 
 .notAvtiveLink {
@@ -41,15 +41,37 @@ nav a:first-child {
     .header {
         margin: 4% 2%;
     }
-
-
 }
 
 /********************************************************** 
         Responsive avec Media Queries  -   <576px    mobile
 ***********************************************************/
 @media all and (max-width: 577px) {
+    .header {
+        margin: 4% 5%;
+    }
+    .header__a {
+        width: 40%;
+        height: 47px;
+    }
+    .header__logo {
+        height: 100%;
+    }
+    .nav a {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 142.6%;
+        text-transform: uppercase;
+    }
+}
 
-
-
+/**  <330px small **/
+@media all and (max-width: 331px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .nav a:first-child {
+        margin: 0;
+    }
 }

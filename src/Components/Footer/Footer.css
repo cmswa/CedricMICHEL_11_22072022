@@ -18,3 +18,19 @@ footer {
 .footerLogo {
     padding: 4em 0 3em 0;
 }
+
+/********************************************************** 
+        Responsive avec Media Queries  -   <576px    mobile
+***********************************************************/
+@media all and (max-width: 577px) {
+    footer {
+        margin-top: 0;
+    }
+    .footerCopyright {
+        font-size: 12px;
+        line-height: 142.6%;
+    }
+    .footerLogo{
+        padding-bottom: 1.5em;
+    }
+}
