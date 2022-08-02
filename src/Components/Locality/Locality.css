@@ -2,7 +2,8 @@
     color: #ff6060;
     display: flex;
     justify-content: space-between;
-    margin: 4% 8%;
+    /* margin: 4% 8%; */
+    margin: 4% 8% 2%;
 }
 
 .locality__specifics {

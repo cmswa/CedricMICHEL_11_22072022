@@ -31,7 +31,7 @@ export default function AccordLocation({ title, description, equipments }) {
       <div
         ref={refHeight}
         className={toggle ? 'accordLocation-toggle animated' : 'accordLocation-toggle'}
-        style={{ minHeight: toggle ? '250px' : '0px' }} /* hauteur qui grandit et rétrécit */
+        style={{ height: toggle ? '100%' : '0px' }} /* hauteur qui grandit et rétrécit */
       >
 
         <p className='accordLocation-toggle__description'
