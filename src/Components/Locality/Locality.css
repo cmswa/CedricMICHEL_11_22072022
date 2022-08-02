@@ -94,6 +94,8 @@
     }
     .locality__specifics-title {
         font-size: 18px;
+        line-height: 28px;
+        margin-top: 10px;
     }
     .locality__specifics-place {
         font-size: 14px;
