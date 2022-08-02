@@ -31,3 +31,33 @@
     letter-spacing: 0em;
     margin-bottom: 2em;
 }
+
+/********************************************************** 
+        Responsive avec Media Queries  -   <992px    tablet
+***********************************************************/
+@media all and (max-width: 993px) {
+    .notFound{
+        margin: 13em 0;
+    }
+    .notFound__title {
+        font-size: 10em;
+    }
+}
+
+/********************************************************** 
+        Responsive avec Media Queries  -   <576px    mobile
+***********************************************************/
+@media all and (max-width: 577px) {
+    .notFound__title {
+        font-size: 6em;
+    }
+    .notFound__txt {
+        font-size: 18px;
+        line-height: 142.6%;
+        padding: 0 9%;
+    }
+    .notFound__link {
+        font-size: 14px;
+        line-height: 142.6%;
+    }
+}
