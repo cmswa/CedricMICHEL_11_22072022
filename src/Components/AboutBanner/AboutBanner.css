@@ -5,6 +5,10 @@
     position: relative;
 }
 
+.aboutBanner__img--mobile {
+    display: none;
+}
+
 .aboutBanner__img {
     width: 100%;
     height: 100%;
@@ -31,15 +35,30 @@
     .aboutBanner {
         margin: 4% 2%;
     }
-
-
 }
 
 /********************************************************** 
         Responsive avec Media Queries  -   <576px    mobile
 ***********************************************************/
 @media all and (max-width: 577px) {
-
-
-
+    .aboutBanner {
+        margin: 4% 5%;
+    }
+    .aboutBanner__img {
+        display: none;
+    }
+    .aboutBanner__img--mobile {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+    .aboutBanner__layer {
+        border-radius: 10px;
+    }
 }

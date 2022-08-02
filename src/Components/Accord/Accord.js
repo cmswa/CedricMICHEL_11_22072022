@@ -31,7 +31,8 @@ export default function Accord({ title, description }) {
       <div
         ref={refHeight}
         className={toggle ? 'accord-toggle animated' : 'accord-toggle'}
-        style={{ height: toggle ? `${heightEl}` : '0px' }} /* hauteur qui grandit et rétrécit */
+        style={{ height: toggle ? `${heightEl}` : '0px' }} /*  hauteur qui grandit et rétrécit */
+      // style={{ height: toggle ? 'auto' : '0px' }}
       >
         <p
           aria-hidden={toggle ? 'true' : 'false'} /* retirer texte présent à la fermeture */

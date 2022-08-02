@@ -64,3 +64,27 @@
 .rotate {
     transform: rotate(180deg);
 }
+
+/********************************************************** 
+        Responsive avec Media Queries  -   <576px    mobile
+***********************************************************/
+@media all and (max-width: 577px) {
+    .accord {
+        margin: 5% 5% 8%;
+        width: auto;
+    }
+    .accord-visible {
+        height: 30px;
+    }
+    .accordTitle {
+        font-size: 13px;
+        line-height: 142.6%;
+    }
+    .chevron {
+        width: 15px;
+    }
+    .accord-toggle p {
+        font-size: 12px;
+        padding-bottom: 50px;
+    }
+}
