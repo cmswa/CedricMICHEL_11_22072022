@@ -125,3 +125,17 @@
         line-height: 142.6%;
     }
 }
+
+/********************************************************** 
+        Responsive avec Media Queries  -   <992px    tablet
+***********************************************************/
+@media all and (max-width: 993px) {
+    .locality {
+        flex-wrap: wrap;
+    }
+    .locality__host {
+        flex-direction: row-reverse;
+        margin-top: 1em;
+        width: 100%;
+    }
+}
