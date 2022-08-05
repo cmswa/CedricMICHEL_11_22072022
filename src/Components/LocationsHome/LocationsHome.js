@@ -1,6 +1,5 @@
 import React from 'react'
 import './LocationsHome.css'
-import { useState, useEffect } from 'react'
 import Data from '../../data/logements.json'
 // let url = "";
 import { Link } from "react-router-dom";

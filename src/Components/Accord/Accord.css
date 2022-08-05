@@ -43,10 +43,12 @@
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 142.6%;
+    /* line-height: 142.6%; */
+    line-height: 107%;
     color: #ff6060;
     margin: 0;
-    padding: 32px 15px 20px;
+    /* padding: 32px 15px 20px; */
+    padding: 30px 15px 40px;
     pointer-events: none;
     text-align: left;
 }

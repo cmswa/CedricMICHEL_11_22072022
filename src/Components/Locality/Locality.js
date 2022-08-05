@@ -1,6 +1,5 @@
 import React from 'react'
 import './Locality.css'
-import { v4 as uuidv4 } from 'uuid';
 import Stars from '../Stars/Stars';
 
 export default function Locality({ logement }) {
