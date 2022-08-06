@@ -17,24 +17,23 @@ export default function Accord({ title, description }) {
     setHeightEl(`${refHeight.current.scrollHeight}px`)
   }, [])
 
-
   return (
-    <div className='accord accordLocation accordAbout'>
+    <div className='accordLocation accordAbout'>
 
       <div
         onClick={toggleState}
-        className="accord-visible">
-        <h2 className='accordTitle'>{title}</h2>
+        className="accord-visible-about accord-visible-location">
+        <h2 className='accordTitle-about accordTitle-location'>{title}</h2>
         <img className={toggle ? 'chevron rotate' : 'chevron'} src={ChevronDown} alt="chevron down" />
       </div>
 
       <div
         ref={refHeight}
-        className={toggle ? 'accord-toggle animated' : 'accord-toggle'}
+        className={toggle ? ('accord-toggle-about animated' || 'accord-toggle-location animated') : 'accord-toggle-about accord-toggle-location'}
         style={{ height: toggle ? `${heightEl}` : '0px', paddingTop: '0' }} /*  hauteur qui grandit et rétrécit */
       // style={{ height: toggle ? 'auto' : '0px' }}
       >
-        <div className='accordDescription'
+        <div className='accordDescription-about accordDescription-location'
           aria-hidden={toggle ? 'true' : 'false'} /* retirer texte présent à la fermeture */
         >
           {description}</div>
