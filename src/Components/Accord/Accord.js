@@ -19,7 +19,7 @@ export default function Accord({ title, description }) {
 
 
   return (
-    <div className='accord'>
+    <div className='accord accordLocation accordAbout'>
 
       <div
         onClick={toggleState}
@@ -34,10 +34,10 @@ export default function Accord({ title, description }) {
         style={{ height: toggle ? `${heightEl}` : '0px', paddingTop: '0' }} /*  hauteur qui grandit et rétrécit */
       // style={{ height: toggle ? 'auto' : '0px' }}
       >
-        <p
+        <div className='accordDescription'
           aria-hidden={toggle ? 'true' : 'false'} /* retirer texte présent à la fermeture */
         >
-          {description}</p>
+          {description}</div>
       </div>
 
     </div>

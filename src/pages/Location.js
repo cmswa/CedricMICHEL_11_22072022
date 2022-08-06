@@ -3,7 +3,7 @@ import Header from '../Components/Header/Header';
 import Footer from '../Components/Footer/Footer';
 import Gallery from '../Components/Gallery/Gallery';
 import Locality from '../Components/Locality/Locality';
-import AccordLocation from '../Components/AccordLocation/AccordLocation';
+import Accord from '../Components/Accord/Accord';
 import Data from '../data/logements.json'
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -34,9 +34,10 @@ export default function Location() {
       < Gallery pictures={logement.pictures} title={logement.title} />
       < Locality logement={logement} />
       <section className="description">
-        < AccordLocation title="Description" description={logement.description} />  
-        < AccordLocation title="Équipements" equipments={logement.equipments.map((equipment) => 
-        <li className="accordLocation-toggle__equipments__equipment" key={equipment}>{equipment}</li>)} />
+        < Accord title="Description" description={<p>{logement.description}</p>} />
+        < Accord title="Équipements"
+          description={logement.equipments.map((equipment) =>
+            <p className="accordLocation-toggle__equipments__equipment" key={equipment}>{equipment}</p>)} />
       </section>
       < Footer />
     </div>
