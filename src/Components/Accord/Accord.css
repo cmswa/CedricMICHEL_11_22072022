@@ -1,4 +1,8 @@
-.accord {
+/********************
+Collapses page About
+********************/
+
+.accordAbout {
     width: 70%;
     /* height: 184px; */
     height: auto;
@@ -6,7 +10,7 @@
     margin: 40px auto 0; /*centrer*/
 }
 
-.accord-visible {
+.accord-visible-about {
     background: #ff6060;
     border-radius: 5px;
     cursor: pointer;
@@ -19,7 +23,7 @@
     z-index: 1;
 }
 
-.accordTitle {
+.accordTitle-about {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -38,17 +42,17 @@
     z-index: -1;
 }
 
-.accordDescription-description,
-.accordDescription-location__content {
+.accordDescription-about__content {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 142.6%;
+    /* line-height: 107%; */
     color: #ff6060;
     margin: 0;
     /* padding: 32px 15px 20px; */
-    /* padding: 30px 15px 40px; */
+    padding: 30px 15px 40px;
     pointer-events: none;
     text-align: left;
 }
@@ -67,16 +71,74 @@
     transform: rotate(180deg);
 }
 
-.accordLocation-toggle__equipments__equipment {
-    padding-bottom: 5px;
-    font-weight: 400;
+/********************************************************** 
+        Responsive avec Media Queries  -   <576px    mobile
+***********************************************************/
+@media all and (max-width: 577px) {
+    .accordAbout {
+        margin: 5% 5% 8%;
+        width: auto;
+    }
+    .accord-visible-about {
+        height: 30px;
+    }
+    .accordTitle-about {
+        font-size: 13px;
+        line-height: 142.6%;
+    }
+    .chevron {
+        width: 15px;
+    }
+    .accordDescription-about__content {
+        font-size: 12px;
+        padding-bottom: 50px;
+    }
+}
+
+/********************************************************************************************
+*********************************************************************************************
+    ***********************
+    Collapses page Location
+    ***********************/
+.accordLocation {
+    width: 46%;
+    /* height: 184px; */
+    height: auto;
+    border-radius: 10px;
+    /*centrer*/
+    /* margin: 40px auto 0;  */
+    margin: 0;
+}
+
+.accord-visible-location {
+    background: #ff6060;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    height: 47px;
+    position: relative;
+    z-index: 1;
+}
+
+.accordTitle-location {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
     font-size: 18px;
     line-height: 142.6%;
-    color: #ff6060;
+    color: white;
 }
 
 .accordDescription-location {
-    padding: 30px 20px 40px;
+    font-size: 18px;
+    line-height: 142.6%;
+}
+
+.accordLocation-toggle__equipments__equipment {
+    margin-bottom: 0.5em;
 }
 
 .description {
@@ -87,48 +149,58 @@
     margin: 2.5% 8% 0;
 }
 
-.accord .accordLocation {
-    width: 46%;
-    /* height: 184px; */
-    height: auto;
-    border-radius: 10px;
-    /*centrer*/
-    /* margin: 40px auto 0;  */
-    margin: 0;
-}
-
-.accordLocation .accordTitle {
-    font-weight: 500;
+.accordDescription-location {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
     font-size: 18px;
     line-height: 142.6%;
+    color: #ff6060;
+    margin: 0;
+    /* padding: 32px 15px 20px; */
+    /* padding: 30px 15px 40px; */
+    padding: 30px 15px 0;
+    pointer-events: none;
+    text-align: left;
 }
-
-.accordLocation .accord-visible {
-    padding: 13px 20px;
-}
-
-
 
 /********************************************************** 
-        Responsive avec Media Queries  -   <576px    mobile
-***********************************************************/
+            Responsive avec Media Queries  -   <576px    mobile
+    ***********************************************************/
 @media all and (max-width: 577px) {
-    .accord {
-        margin: 5% 5% 8%;
+    .description {
+        margin: 4% 5%;
+        display: block;
+    }
+    .accordLocation {
         width: auto;
+        margin-bottom: 2em;
     }
-    .accord-visible {
+    .accord-visible-location {
         height: 30px;
+        border-radius: 5px;
     }
-    .accordTitle {
+    .accordTitle-location {
         font-size: 13px;
         line-height: 142.6%;
+    }
+    .accordDescription-location {
+        padding-bottom: 15px;
     }
     .chevron {
         width: 15px;
     }
-    .accord-toggle p {
+    .accordDescription-location,
+    .accordLocation-toggle__equipments {
+        line-height: 142.6%;
         font-size: 12px;
-        padding-bottom: 50px;
+        /* line-height: 116%; */
+    }
+    .animated {
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+    .accordLocation-toggle__equipments__equipment {
+        margin-bottom: 0;
     }
 }

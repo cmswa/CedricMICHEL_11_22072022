@@ -34,8 +34,9 @@ export default function Location() {
       < Gallery pictures={logement.pictures} title={logement.title} />
       < Locality logement={logement} />
       <section className="description">
-        < Accord title="Description" description={<p className='accordDescription-description'>{logement.description}</p>} />
-        < Accord title="Équipements"
+        < Accord title="Description" accord='accordLocation' accordVisible='accord-visible-location' accordTitleAbout='accordTitle-location' accordDescription='accordDescription-location'
+          description={<p className='accordDescription-description'>{logement.description}</p>} />
+        < Accord title="Équipements" accord='accordLocation' accordVisible='accord-visible-location' accordTitleAbout='accordTitle-location' accordDescription='accordDescription-location'
           description={logement.equipments.map((equipment) =>
             <p className="accordLocation-toggle__equipments__equipment" key={equipment}>{equipment}</p>)} />
       </section>
